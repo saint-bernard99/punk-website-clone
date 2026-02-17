@@ -82,8 +82,7 @@ h1, h2, h3, p{
 .section-two{
     background: var(--BG-2);
     color: var(--FONT-COLOR-2);
-    /* ;
-     */
+    
 }
 
 .section-one{
@@ -110,8 +109,24 @@ h1, h2, h3, p{
 }
 
 button{
-    border: none;
+    /* border: none; */
     border-radius: 999px;
     padding: 10px;
     font-family: inherit;
+}
+
+.btn-one{
+    background: var(--SECONDARY-1);
+    color: var(--SECONDARY-2);
+}
+
+.btn-two{
+    background: var(--BG-2);
+    color: var(--FONT-COLOR-2)
+}
+
+.btn-three{
+    background: var(--BG-1);
+    border-color: var(--SECONDARY-LINE);
+    color: var(--FONT-COLOR-1);
 }
