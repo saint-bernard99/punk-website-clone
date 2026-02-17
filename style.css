@@ -41,13 +41,24 @@ input, textarea, button {
 
 
 html{
-    background: var(--BG-1);
+    background: var(--BG-2);
     color: var(--FONT-COLOR-1);
+    /* padding: 10px 20px 20px; */
 }
 
 body{
     min-height: 100vh;
+    background: var(--BG-2);
+    color: var(--BG-2);
+    /* padding: 10px 20px 20px; */
+}
 
+header, .hero, .section-one, .section-three{
+    background: var(--BG-1);
+}
+
+footer{
+    color: var(--FONT-COLOR-2);
 }
 
 hr{
@@ -63,21 +74,44 @@ h1, h2, h3, p{
     font-family: var(--FONT-FAMILY)
 }
 
+.section-one, .section-two, .section-three{
+    padding: 3px 10px 50px 10px;
+}
+
+
 .section-two{
     background: var(--BG-2);
     color: var(--FONT-COLOR-2);
+    /* ;
+     */
 }
 
 .section-one{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    display: block;
+
+
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
 }
 
 .section-three{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    display: block;
+
+
+    border: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .section-one-img{
     width: 70%;
+}
+
+button{
+    border: none;
+    border-radius: 999px;
+    padding: 10px;
+    font-family: inherit;
 }
