@@ -260,21 +260,73 @@ button{
 
 /* BIG SCREEN MEDIA QUERIES */
 @media (min-width: 470px) {
+
+    /* NAV BAR */
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .header-title-line{
+        padding: 0.25rem 0.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
     .menu-button{
         display: none;
     }
 
-    nav{
-    background-color: var(--BG-1);
-    display: inline;
-    transform-origin: top center;
-    /* animation: showMenu 0.5s ease-in-out forwards; */
+    .menu-icon{
+        display: none;
     }
 
-    .header-title-line{
-    padding: 0.25rem 0.5rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    nav{
+        background-color: transparent;
+        display: flex;
+        transform-origin: none;
+        animation: none;
+        justify-content: right;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    nav li{
+        padding: 0.5rem;
+    }
+
+    nav a{
+        display: block;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    nav button{
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+
+    nav a:any-link{
+        color: var(--SECONDARY-2);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* nav a:hover, nav a:focus, nav button:focus, nav button:hover{
+        transform: scale(1.2);
+        transition: all 0.3s;
+    } */
+
+    .btn-one{
+        padding: 15px;
+        width: 100%;
     }
 }
