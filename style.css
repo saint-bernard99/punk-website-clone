@@ -18,10 +18,9 @@ input, textarea, button {
     font: inherit;
 }
 
-/* .nowrap{
+.nowrap{
     white-space: nowrap;
-} */
-
+}
 /* VARIABLES */
 :root{
     /* FONTS */
@@ -199,10 +198,6 @@ nav a:hover, nav a:focus, nav button:focus, nav button:hover{
 }
 
 
-
-
-
-
 .section-one, .section-two, .section-three{
     padding: 35px 10px 50px 10px;
 }
@@ -216,8 +211,6 @@ nav a:hover, nav a:focus, nav button:focus, nav button:hover{
 
 .section-one{
     display: block;
-
-
     border: none;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -226,8 +219,6 @@ nav a:hover, nav a:focus, nav button:focus, nav button:hover{
 
 .section-three{
     display: block;
-
-
     border: none;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -262,6 +253,13 @@ button{
 }
 
 
+.hero-header, .hero p{
+    text-align: center;
+}
+
+.hero-header{
+    padding: 7%;
+}
 
 /* BIG SCREEN MEDIA QUERIES */
 @media (min-width: 768px) {
