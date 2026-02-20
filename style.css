@@ -18,6 +18,10 @@ input, textarea, button {
     font: inherit;
 }
 
+/* .nowrap{
+    white-space: nowrap;
+} */
+
 /* VARIABLES */
 :root{
     /* FONTS */
@@ -82,6 +86,7 @@ h1, h2, h3, p{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-button{
@@ -259,20 +264,16 @@ button{
 
 
 /* BIG SCREEN MEDIA QUERIES */
-@media (min-width: 470px) {
+@media (min-width: 768px) {
+
+    
 
     /* NAV BAR */
     header{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-    }
-
-    .header-title-line{
-        padding: 0.25rem 0.5rem;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        padding: 0.5%;
     }
 
     .menu-button{
@@ -292,26 +293,28 @@ button{
     }
 
     nav ul{
-        list-style-type: none;
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
+        gap: 30px;
+        
     }
 
     nav li{
-        padding: 0.5rem;
+        font-size: 1.3rem;
+        margin: auto;
     }
 
     nav a{
-        display: block;
+        display: flex;
         text-align: center;
         width: 100%;
-
+        /* padding: 0%; */
     }
 
     nav button{
-        display: block;
-        text-align: center;
         width: 80%;
+        /* margin: auto; */
     }
 
     nav a:any-link{
@@ -320,13 +323,16 @@ button{
         text-decoration: none;
     }
 
-    /* nav a:hover, nav a:focus, nav button:focus, nav button:hover{
-        transform: scale(1.2);
+    nav button:focus, nav button:hover{
+        transform: scale(1.1);
         transition: all 0.3s;
-    } */
+    }
 
     .btn-one{
-        padding: 15px;
+        border: none;
+        padding: 13px;
         width: 100%;
+        /* margin: 2%; */
+        display: block;
     }
 }
