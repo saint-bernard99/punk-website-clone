@@ -253,18 +253,50 @@ button{
 }
 
 
-.hero-header, .hero p{
+.hero-header, .hero-text{
     text-align: center;
 }
 
 .hero-header{
-    padding: 7%;
+    font-size: clamp(24px, 6vw, 60px);
+    line-height: 1.35;
+    padding: 6.75%;
+    font-weight: normal;
+    /* margin: 1%; */
+    
 }
+
+.hero-text{
+    font-size: clamp(12px, 2vw, 30px);
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* BIG SCREEN MEDIA QUERIES */
 @media (min-width: 768px) {
 
-    
 
     /* NAV BAR */
     header{
@@ -332,5 +364,9 @@ button{
         width: 100%;
         /* margin: 2%; */
         display: block;
+    }
+
+    .hero-header{
+        padding: 4%;
     }
 }
