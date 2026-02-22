@@ -260,15 +260,26 @@ button{
 .hero-header{
     font-size: clamp(24px, 6vw, 60px);
     line-height: 1.35;
-    padding: 6.75%;
+    /* padding: 6.75%; */
     font-weight: normal;
     /* margin: 1%; */
     
+
+
+    padding-top: 6.75%;
+    /* padding-bottom: ; */
+    padding-right: 6.75%;
+    padding-left: 6.75%;
 }
 
 .hero-text{
     font-size: clamp(12px, 2vw, 30px);
-    padding: 3%;
+    /* padding: 3%; */
+
+    padding-top: 3%;
+    /* padding-bottom: ; */
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 
@@ -368,5 +379,12 @@ button{
 
     .hero-header{
         padding: 4%;
+    }
+
+    .hero-text{
+        /* margin-top: ;
+        margin-bottom: ; */
+        margin-right: 5% ;
+        margin-left: 5%;
     }
 }
