@@ -287,13 +287,13 @@ button{
 .mint-btn{
     display: block;
     margin: 0 auto;
-    padding: 4%;
+    padding: 4px;
     border: none;
     height: 40px;
-    width: 35%;
+    width: 145px;
 }
 
-/* FIX MINT BUTTON RESPONSIVE ISSUE */
+
 
 /* .hero-row{
     display: flex;
