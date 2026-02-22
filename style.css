@@ -276,12 +276,35 @@ button{
     font-size: clamp(12px, 2vw, 30px);
     /* padding: 3%; */
 
-    padding-top: 3%;
-    /* padding-bottom: ; */
+    /* padding-top: 3%; */
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
     padding-right: 3%;
     padding-left: 3%;
 }
 
+.mint-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 4%;
+    border: none;
+    height: 40px;
+    width: 35%;
+}
+
+/* FIX MINT BUTTON RESPONSIVE ISSUE */
+
+/* .hero-row{
+    display: flex;
+    flex-flow: row;
+    margin-top: 30px;
+}
+
+.hero-row img{
+    height: 70px;
+    margin: 3px;
+} */
 
 
 
@@ -378,13 +401,19 @@ button{
     }
 
     .hero-header{
-        padding: 4%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-right: 1%;
+        padding-left: 1%;
     }
 
     .hero-text{
-        /* margin-top: ;
-        margin-bottom: ; */
+        margin-top: 0;
+        margin-bottom: 0;
         margin-right: 5% ;
         margin-left: 5%;
+        padding-bottom: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
     }
 }
