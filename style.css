@@ -53,6 +53,7 @@ body{
     min-height: 100vh;
     background: var(--BG-2);
     color: var(--BG-2);
+    font-family: var(--FONT-FAMILY);
     /* padding: 10px 20px 20px; */
 }
 
@@ -231,6 +232,7 @@ button{
     border-radius: 999px;
     padding: 10px;
     font-family: inherit;
+    height: auto;
 }
 
 
@@ -375,7 +377,7 @@ button{
     flex-flow: column;
 }
 
-.btn-two, .btn-three{
+.btn-two, .btn-three, .btn-four{
     margin: 5px 0px;
 }
 
@@ -407,6 +409,50 @@ button{
 
 .meet-sale-cond-p2{
     background: transparent;
+}
+
+.section-two-largest, .section-two-recent{
+    margin-top: 35px;
+}
+
+.btn-four{
+    border: 1px solid var(--SECONDARY-LINE);
+    background: transparent;
+    width: 90px;
+    margin: 25px 0px;
+}
+
+.largest-container, .recent-container{
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.largest-container::-webkit-scrollbar, .recent-container::-webkit-scrollbar{
+    display: none;
+}
+
+.section-two-sub{
+    white-space: nowrap;
+    font-size: 0.75rem;
+}
+
+.section-two figcaption{
+    margin: 17px 0px;
+}
+
+.section-two-sub-p{
+    font-size: 0.8rem;
+    margin: 10px 0px 0px 0px;
+}
+
+
+.section-three-how{
+    margin: 35px 0px 0px 0px;
+}
+
+.section-three-details{
+    margin: 75px 0px 0px 0px;
 }
 
 
@@ -530,12 +576,22 @@ button{
     }
 
     .meet{
-        margin-top: 70px;
+        padding: 3%;
         display: grid;
         grid-template-columns: /* 2fr 2fr */ 50% 50%;
-        gap: 1rem;
+        gap: 2rem;
         /* flex-flow: column;
         align-items: left;
         text-align: left; */
+    }
+
+    .section-one-img{
+        width: 92%;
+        padding: 0px 0px 15px 0px;
+        margin: 10px 0px 0px 0px;
+    }   
+    
+    .meet-writeup-p{
+        padding: 0px 15px 0px 0px;
     }
 }
