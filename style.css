@@ -75,10 +75,13 @@ hr{
     margin: 10px auto;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, h4, p{
     font-family: var(--FONT-FAMILY)
 }
 
+p{
+    font: clamp(8px, 5vw, 24px)
+}
 
 /* HAMBURGER MENU */
 .header-title-line{
@@ -199,7 +202,7 @@ nav a:hover, nav a:focus, nav button:focus, nav button:hover{
 
 
 .section-one, .section-two, .section-three{
-    padding: 35px 10px 50px 10px;
+    padding: 35px 20px 50px 20px;
 }
 
 
@@ -451,10 +454,6 @@ button{
     margin: 35px 0px 0px 0px;
 }
 
-.section-three-details{
-    margin: 75px 0px 0px 0px;
-}
-
 .section-three-how h2{
     margin-bottom: 30px;
 }
@@ -464,6 +463,7 @@ button{
     margin-bottom: 30px;
     display: flex;
     justify-content: space-evenly;
+    width: fit-content;
 }
 
 .counters{
@@ -489,19 +489,54 @@ button{
     background: transparent;
     border: 1px solid var(--SECONDARY-LINE);
     color: var(--FONT-COLOR-1);
-    width: 185px;
+    width: 160px;
     margin: 15px 0px 0px 0px;
 }
 
+.section-three-details{
+    margin: 75px 0px 0px 0px;
+}
 
+.section-three-details h2{
+    margin-bottom: 45px;
+}
 
+.details-list{
+    margin-bottom: 45px;
+}
 
+.details-list p{
+    font-size: 0.75rem;
+}
 
+.details-list h4{
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
 
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
+footer section{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 18px;
+}
 
+footer p{
+    font-size: 0.75rem;
+}
 
-
+footer strong{
+    font-size: 1.5rem;
+}
 
 
 
@@ -509,7 +544,6 @@ button{
 
 /* BIG SCREEN MEDIA QUERIES */
 @media (min-width: 768px) {
-
 
     /* NAV BAR */
     header{
@@ -641,7 +675,46 @@ button{
     }
 
     .how{
-        width: 65%;
+        width: 50%;
     }
 
+    .btn-five{
+        width: 150px;
+    }
+
+    .details-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details-list p{
+        width: 50%; 
+    }
+
+
+    .footer-one{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        /* gap: 150px; */
+    }
+
+    .footer-one-div{
+        display: flex;
+        flex-flow: row;
+        gap: 45px;
+        justify-content: space-between;
+    }
+
+    .footer-two{
+        padding-bottom: 30px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 12px;
+    }
 }
