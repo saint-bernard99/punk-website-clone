@@ -455,6 +455,45 @@ button{
     margin: 75px 0px 0px 0px;
 }
 
+.section-three-how h2{
+    margin-bottom: 30px;
+}
+
+.how-list{
+    font-size: 0.75rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.counters{
+    margin: 0px 30px 0px 30px;
+    background: transparent;
+    line-height: 1;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    display: inline-grid;
+    aspect-ratio: 1;
+    border: 1px solid var(--BG-2);
+    border-radius: 50%;
+
+}
+
+.how-list h4{
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+}
+
+.btn-five{
+    background: transparent;
+    border: 1px solid var(--SECONDARY-LINE);
+    color: var(--FONT-COLOR-1);
+    width: 185px;
+    margin: 15px 0px 0px 0px;
+}
+
+
 
 
 
@@ -483,6 +522,7 @@ button{
     .menu-button{
         display: none;
     }
+
 
     .menu-icon{
         display: none;
@@ -594,4 +634,14 @@ button{
     .meet-writeup-p{
         padding: 0px 15px 0px 0px;
     }
+
+    .section-three-how{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .how{
+        width: 65%;
+    }
+
 }
