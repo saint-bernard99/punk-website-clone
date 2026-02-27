@@ -354,6 +354,10 @@ button{
     text-align: left;
 }
 
+.article-link a, .how-list a{
+    color: var(--SECONDARY-1);
+}
+
 .meet{
     margin-top: 70px;
     display: flex;
@@ -538,7 +542,19 @@ footer strong{
     font-size: 1.5rem;
 }
 
+.footer-one-div{
+    display: flex;
+    flex-flow: column;
+    gap: 17px;
+    justify-content: space-between;
+}
 
+.footer-one-div-one{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    justify-content: center;
+}
 
 
 
